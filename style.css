@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f2f5;
+}
+
+.contenedor {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 500px;
+    text-align: center;
+}
+
+/* El Input */
+.input-moderno {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-moderno:focus {
+    border-color: #4A90E2;
+}
+
+/* Botón Base */
+.btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Colores por categoría */
+.btn-orden { background-color: #FF6B6B; }
+.btn-info { background-color: #4ECDC4; }
+.btn-nombre { background-color: #45B7D1; }
+.btn-pos { background-color: #96CEB4; }
+.btn-mitad { background-color: #FFEEAD; color: #333; }
+
+/* Caja de Resultado */
+#resultado-caja {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 5px solid #4A90E2;
+    border-radius: 4px;
+}
+
+#resultado {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
