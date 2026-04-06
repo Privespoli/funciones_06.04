@@ -7,6 +7,55 @@
 </head>
 <body>
     
+<h2>SUMAR + </h2>
+    <form onsubmit="operacion(event, 'suma')">
+    <input type="number" id="s1" placeholder="Num 1" required>
+    <input type="number" id="s2" placeholder="Num 2" required>
+    <button type="submit">Sumar</button>
+</form>
+
+<h2> RESTAR - </h2>
+<form onsubmit="operacion(event, 'resta')">
+    <input type="number" id="r1" placeholder="Num 1" required>
+    <input type="number" id="r2" placeholder="Num 2" required>
+    <button type="submit">Restar</button>
+</form>
+
+<h2> Multiplicar *</h2>
+<form onsubmit="operacion(event, 'multi')">
+    <input type="number" id="m1" placeholder="Num 1" required>
+    <input type="number" id="m2" placeholder="Num 2" required>
+    <button type="submit">Multiplicar</button>
+</form>
+
+<h2> Dividir / </h2>
+<form onsubmit="operacion(event, 'divi')">
+    <input type="number" id="d1" placeholder="Num 1" required>
+    <input type="number" id="d2" placeholder="Num 2" required>
+    <button type="submit">Dividir</button>
+</form>
+
+<h2 id="resultado">Resultado: </h2>
+
+<label>Escribe algo:</label>
+<input type="text" id="textoInput" placeholder="Escribe aquí">
+
+<div>
+    <button onclick="ordenarAsc()">Ascendente</button>
+    <button onclick="ordenarDesc()">Descendente</button>
+    <button onclick="desglosar()">Desglosar</button>
+    <button onclick="verTamano()">Tamaño</button>
+    <button onclick="miNombre()">Nombre al final</button>
+    <button onclick="nombreCompa()">Nombre al inicio</button>
+    <button onclick="primeraLetra()">Primera Letra</button>
+    <button onclick="ultimaLetra()">Última Letra</button>
+    <button onclick="primeraMitad()">1ra Mitad</button>
+    <button onclick="segundaMitad()">2da Mitad</button>
+    <button onclick="separarestrela()">separar estrela</button>
+</div>
+
+<h3 id="results">Resultado: </h3>
+
     <script src="/funciones.js"></script>
 </body>
 </html>
